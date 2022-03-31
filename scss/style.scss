@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+
+$marsala: #8E2424;
+$gray: #667085;
+$darkgray: #101828;
+
+
+.header {
+    width: 100vw;
+    height: 80px;
+
+    .container {
+        margin-top: 20px;
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .links ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-left: -200px;
+
+                li {
+                    list-style: none;
+                    margin: 0px 10px;
+
+                    a {
+                        text-decoration: none;
+                        color: $gray;
+                        font-family: Inter;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+
+                        &:hover {
+                            border-bottom: 1px solid $gray;
+                        }
+
+                    }
+                }
+            }
+
+            .buttons {
+
+                .btn1 {
+                    width: 112px;
+                    height: 44px;
+                    padding: 10px 18px 10px 18px;
+                    border-radius: 8px;
+                    border: none;
+                    background-color: transparent;
+                    color: $gray;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    margin-right: 15px;
+                    font-family: Inter;
+
+                    &:hover {
+
+                        box-shadow: inset 0 0 0 3px $marsala;
+                        cursor: pointer;
+                        font-family: Inter;
+                        color: $darkgray;
+                    }
+                }
+
+                .btn2 {
+                    width: 112px;
+                    height: 44px;
+                    padding: 10px 18px 10px 18px;
+                    background-color: $marsala;
+                    color: white;
+                    border: 1px solid $marsala;
+                    border-radius: 8px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    font-family: Inter;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: transparent;
+                        transition: all 0.4s ease;
+                        border: none;
+                        box-shadow: inset 0 0 0 3px $marsala;
+                        color: $darkgray;
+                        font-family: Inter;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.aboutUs {
+    width: 100vw;
+    height: 407px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .aboutText {
+        text-align: center;
+
+        .smallText {
+            color: $marsala;
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+
+        .title {
+            font-family: Inter;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            letter-spacing: -0.02em;
+            color: $darkgray;
+            margin-bottom: 24px;
+        }
+
+        .subTitle {
+            width: 791px;
+            height: 60px;
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+            color: $gray;
+        }
+    }
+}
+
+.aboutCards {
+    width: 100vw;
+    height: 288px;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .aboutBox {
+            height: 72px;
+            width: 280px;
+            gap: 10px;
+
+            .number {
+                font-family: Inter;
+                font-size: 60px;
+                font-weight: 600;
+                line-height: 72px;
+                letter-spacing: -0.02em;
+                text-align: left;
+                margin-bottom: 12px;
+                color: $marsala;
+            }
+
+            .smallText {
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 28px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $darkgray;
+                margin-bottom: 8px;
+            }
+
+            .description {
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: $gray;
+            }
+        }
+    }
+}
+
+.jobs {
+    width: 100vw;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .jobsText {
+        margin-bottom: 50px;
+
+        .smallText {
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $marsala;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 600;
+            line-height: 44px;
+            letter-spacing: -0.02em;
+            text-align: center;
+            color: $darkgray;
+            margin-bottom: 20px;
+        }
+
+        .subTitle {
+            font-family: Inter;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: 0em;
+            text-align: center;
+            color: $gray;
+        }
+    }
+
+    .jobsMedia {
+
+        .container {
+            img {
+                border-radius: 0px 35px 0px 35px;
+            }
+        }
+    }
+
+    .openOpportunities {
+        width: 100vw;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .content {
+                width: 768px;
+
+                .text {
+                    font-family: Inter;
+                    font-size: 20px;
+                    font-weight: 500;
+                    line-height: 30px;
+                    text-align: left;
+                    margin-top: 32px;
+                    margin-bottom: 32px;
+                }
+
+                .items {
+
+                    .jobPost {
+                        width: 768px;
+                        height: 136px;
+                        border: 1px solid #EAECF0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                        justify-content: center;
+                        border-radius: 16px;
+                        padding: 24px 24px 28px 24px;
+                        margin-bottom: 24px;
+                        box-shadow: -0.5px 0.5px $gray;
+
+                        .boxContent {
+
+                            .descriptionJob {
+                                margin-bottom: 32px;
+                                font-family: Inter;
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 28px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: $darkgray;
+
+
+                                a {
+                                    text-decoration: none;
+                                    color: $darkgray;
+
+                                    &:hover {
+                                        border-bottom: 1px solid $darkgray;
+                                        color: $marsala;
+                                    }
+                                }
+                            }
+
+                            .details {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 24px;
+                                font-family: Inter;
+                                font-size: 16px;
+                                font-weight: 500;
+                                line-height: 24px;
+                                letter-spacing: 0em;
+                                text-align: left;
+                                color: $gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .contentBox {
+            width: 80%;
+            align-items: center;
+            background-color: #C3191908;
+            margin-top: 5%;
+            padding: 30px;
+
+            .feedbackText {
+                p {
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $marsala;
+                    margin-bottom: 16px;
+                }
+
+                h2 {
+                    font-family: Inter;
+                    font-size: 36px;
+                    font-weight: 500;
+                    line-height: 44px;
+                    letter-spacing: -0.02em;
+                    text-align: center;
+                    color: $darkgray;
+                    margin-bottom: 32px;
+                }
+            }
+
+            .atribuittion {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .name {
+                    margin-top: 16px;
+                    margin-bottom: 4px;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $darkgray;
+                }
+
+                .profession {
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 0em;
+                    text-align: center;
+                    color: $gray;
+                }
+            }
+        }
+    }
+}
+
+.footer {
+
+    .container {
+        width: 100vw;
+        height: 430px;
+        background-color: #F9FAFB;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h2 {
+                font-family: Inter;
+                font-size: 36px;
+                font-weight: 600;
+                line-height: 44px;
+                letter-spacing: -0.02em;
+                text-align: center;
+                color: $darkgray;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-family: Inter;
+                font-size: 20px;
+                font-weight: 400;
+                line-height: 30px;
+                letter-spacing: 0em;
+                text-align: center;
+                color: $gray;
+                margin-bottom: 40px;
+            }
+        }
+
+        .form {
+            display: flex;
+            flex-direction: row;
+            gap: 8px;
+            margin-bottom: 40px;
+
+            .formBox {
+                height: 48px;
+                width: 360px;
+                border-radius: 8px;
+                padding: 12px 14px 12px 16px;
+                border: 1px solid #D0D5DD;
+                background: #FFFFFF;
+
+                &:after {
+                    border: none;
+                }
+            }
+
+            .btn3 {
+                height: 48px;
+                width: 116px;
+                border-radius: 8px;
+                border: 1px solid #8E2424;
+                padding: 12px 20px 12px 20px;
+                background-color: $marsala;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                color: white;
+
+                &:hover {
+                    cursor: pointer;
+                    background: transparent;
+                    transition: all 0.4s ease;
+                    border: none;
+                    box-shadow: inset 0 0 0 3px $marsala;
+                    color: $darkgray;
+                    font-family: Inter;
+                }
+            }
+        }
+
+        .copyright {
+            font-family: Inter;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: $gray;
+        }
+    }
+}

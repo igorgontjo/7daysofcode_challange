@@ -1,0 +1,432 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100vw;
+  height: 80px;
+}
+.header .container {
+  margin-top: 20px;
+}
+.header .container .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header .container .content .links ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: -200px;
+}
+.header .container .content .links ul li {
+  list-style: none;
+  margin: 0px 10px;
+}
+.header .container .content .links ul li a {
+  text-decoration: none;
+  color: #667085;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header .container .content .links ul li a:hover {
+  border-bottom: 1px solid #667085;
+}
+.header .container .content .buttons .btn1 {
+  width: 112px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: transparent;
+  color: #667085;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-right: 15px;
+  font-family: Inter;
+}
+.header .container .content .buttons .btn1:hover {
+  box-shadow: inset 0 0 0 3px #8E2424;
+  cursor: pointer;
+  font-family: Inter;
+  color: #101828;
+}
+.header .container .content .buttons .btn2 {
+  width: 112px;
+  height: 44px;
+  padding: 10px 18px 10px 18px;
+  background-color: #8E2424;
+  color: white;
+  border: 1px solid #8E2424;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  font-family: Inter;
+}
+.header .container .content .buttons .btn2:hover {
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.4s ease;
+  border: none;
+  box-shadow: inset 0 0 0 3px #8E2424;
+  color: #101828;
+  font-family: Inter;
+}
+
+.aboutUs {
+  width: 100vw;
+  height: 407px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutUs .aboutText {
+  text-align: center;
+}
+.aboutUs .aboutText .smallText {
+  color: #8E2424;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.aboutUs .aboutText .title {
+  font-family: Inter;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #101828;
+  margin-bottom: 24px;
+}
+.aboutUs .aboutText .subTitle {
+  width: 791px;
+  height: 60px;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  color: #667085;
+}
+
+.aboutCards {
+  width: 100vw;
+  height: 288px;
+}
+.aboutCards .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.aboutCards .container .aboutBox {
+  height: 72px;
+  width: 280px;
+  gap: 10px;
+}
+.aboutCards .container .aboutBox .number {
+  font-family: Inter;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  margin-bottom: 12px;
+  color: #8E2424;
+}
+.aboutCards .container .aboutBox .smallText {
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #101828;
+  margin-bottom: 8px;
+}
+.aboutCards .container .aboutBox .description {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #667085;
+}
+
+.jobs {
+  width: 100vw;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jobs .jobsText {
+  margin-bottom: 50px;
+}
+.jobs .jobsText .smallText {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8E2424;
+  margin-bottom: 20px;
+}
+.jobs .jobsText .title {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #101828;
+  margin-bottom: 20px;
+}
+.jobs .jobsText .subTitle {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #667085;
+}
+.jobs .jobsMedia .container img {
+  border-radius: 0px 35px 0px 35px;
+}
+.jobs .openOpportunities {
+  width: 100vw;
+}
+.jobs .openOpportunities .container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.jobs .openOpportunities .container .content {
+  width: 768px;
+}
+.jobs .openOpportunities .container .content .text {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.jobs .openOpportunities .container .content .items .jobPost {
+  width: 768px;
+  height: 136px;
+  border: 1px solid #EAECF0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 24px 24px 28px 24px;
+  margin-bottom: 24px;
+  box-shadow: -0.5px 0.5px #667085;
+}
+.jobs .openOpportunities .container .content .items .jobPost .boxContent .descriptionJob {
+  margin-bottom: 32px;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #101828;
+}
+.jobs .openOpportunities .container .content .items .jobPost .boxContent .descriptionJob a {
+  text-decoration: none;
+  color: #101828;
+}
+.jobs .openOpportunities .container .content .items .jobPost .boxContent .descriptionJob a:hover {
+  border-bottom: 1px solid #101828;
+  color: #8E2424;
+}
+.jobs .openOpportunities .container .content .items .jobPost .boxContent .details {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #667085;
+}
+.jobs .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.jobs .container .contentBox {
+  width: 80%;
+  align-items: center;
+  background-color: #C3191908;
+  margin-top: 5%;
+  padding: 30px;
+}
+.jobs .container .contentBox .feedbackText p {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #8E2424;
+  margin-bottom: 16px;
+}
+.jobs .container .contentBox .feedbackText h2 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #101828;
+  margin-bottom: 32px;
+}
+.jobs .container .contentBox .atribuittion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.jobs .container .contentBox .atribuittion .name {
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #101828;
+}
+.jobs .container .contentBox .atribuittion .profession {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #667085;
+}
+
+.footer .container {
+  width: 100vw;
+  height: 430px;
+  background-color: #F9FAFB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .container .text h2 {
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #101828;
+  margin-bottom: 20px;
+}
+.footer .container .text p {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #667085;
+  margin-bottom: 40px;
+}
+.footer .container .form {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+.footer .container .form .formBox {
+  height: 48px;
+  width: 360px;
+  border-radius: 8px;
+  padding: 12px 14px 12px 16px;
+  border: 1px solid #D0D5DD;
+  background: #FFFFFF;
+}
+.footer .container .form .formBox:after {
+  border: none;
+}
+.footer .container .form .btn3 {
+  height: 48px;
+  width: 116px;
+  border-radius: 8px;
+  border: 1px solid #8E2424;
+  padding: 12px 20px 12px 20px;
+  background-color: #8E2424;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: white;
+}
+.footer .container .form .btn3:hover {
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.4s ease;
+  border: none;
+  box-shadow: inset 0 0 0 3px #8E2424;
+  color: #101828;
+  font-family: Inter;
+}
+.footer .container .copyright {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #667085;
+}
+
+/*# sourceMappingURL=style.css.map */
